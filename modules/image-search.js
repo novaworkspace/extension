@@ -3,6 +3,11 @@ chrome.contextMenus.create({
   contexts: ['image'],
   onclick: searchImage
 });
+chrome.contextMenus.create({
+  title: 'Найти похожее',
+  contexts: ['image'],
+  onclick: searchImage
+});
 
 function searchImage(e) {
   const image = e.srcUrl

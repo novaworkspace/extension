@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "Opera Extensions",
-	"description": "Sample extension for the “Making your first extension” article",
+	"name": "Osko",
+	"description": "Custom tools",
 	"version": "1.0",
 	"background": {
 		"scripts": [
