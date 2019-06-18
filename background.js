@@ -1,9 +1,10 @@
-chrome.contextMenus.create({
-  title: 'Открыть iframe',
-  contexts: ['frame'],
-  onclick: openFrame
-});
-
-function openFrame(e) {
-  chrome.tabs.create({ url: e.frameUrl })
-}
+// chrome.browserAction.onClicked.addListener(function () {
+//   chrome.tabs.query({
+//     currentWindow: true,
+//     active: true
+//   }, function (tab) {
+//     chrome.tabs.create({
+//       "url": "http://dev.opera.com"
+//     });
+//   });
+// });
