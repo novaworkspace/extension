@@ -10,7 +10,14 @@
 			"./modules/image-search.js"
 		]
 	},
-	"permissions": ["tabs", "contextMenus"],
+	"permissions": ["tabs", "activeTab", "contextMenus", "webNavigation", "*://*/*"],
+	"content_scripts": [
+		{
+			"matches": ["https://vk.com/*"],
+			"run_at": "document_idle",
+			"js": ["./modules/vk.js"]
+		}
+	],
 	"icons": {
 		"16": "icon.png",
 		"48": "icon.png",
